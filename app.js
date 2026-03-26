@@ -1,4 +1,3 @@
-//http://api.weatherapi.com/v1/current.json?key=e715f0b84eeb48fbb9873437262603&q=Mumbai&aqi=no
 const tempfield=document.querySelector(".tempretur span")
 const locationfield=document.querySelector(".location_time p");
 const datefield=document.querySelector(".location_time span");
@@ -8,7 +7,7 @@ const form=document.querySelector("form");
 const reset=document.querySelector("#resetbtn");
 
 const fetchResult=async(targetlogacation)=>{
-    let url=`http://api.weatherapi.com/v1/current.json?key=e715f0b84eeb48fbb9873437262603&q=${targetlogacation}&aqi=no`;
+    let url=`https://api.weatherapi.com/v1/current.json?key=e715f0b84eeb48fbb9873437262603&q=${targetlogacation}&aqi=no`;
 
     const res=await fetch(url);
 
